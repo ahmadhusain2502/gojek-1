@@ -1,1 +1,3 @@
-# gfclaimv2
+# GOFOOD CLAIM 
+<h5> Add Promo : COBAINGOJEK & AYOCOBAGOJEK
+<h5> Add Promo : GOFOODBOBA07 
