@@ -55,9 +55,13 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 				$claims1 = json_decode($claim1[0]);
 					echo $claims1->data->message;
 					
+		}else{
+			echo "Verifikasi gagal";
 		} 
 												
 							
+	}else{
+		echo "Nomor udah dipake";
 	}
 	function nama()
 	{
