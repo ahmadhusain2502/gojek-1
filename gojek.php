@@ -1,7 +1,7 @@
 <?php
-#AUTO CLAIM VOC GOJEK no tf RP 1
-#Created By Alip Dzikri X Apri AMsyah
-#Reedit Arief
+#AUTO CLAIM VOC GOJEK
+#sgb team
+# y
 #####################################
 
 $secret = '83415d06-ec4e-11e6-a41b-6c40088ab51e';
@@ -48,12 +48,19 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 				$claims = json_decode($claim[0]);
 					echo $claims->data->message;
 					echo "\n";
-					sleep(10);
+					sleep(5);
 					echo "[+]Process Redeem COBAINGOJEK \n";
 						$data4 = '{"promo_code":"COBAINGOJEK"}';
 				$claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
 				$claims1 = json_decode($claim1[0]);
 					echo $claims1->data->message;
+				echo "\n";
+					sleep(5);
+					echo "[+]Process Redeem Ayocobagojej \n";
+						$data5 = '{"promo_code":"AYOCOBAGOJEK"}';
+				$claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
+				$claims2 = json_decode($claim2[0]);
+					echo $claims2->data->message;
 					
 		}else{
 			echo "Verifikasi gagal";
