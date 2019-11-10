@@ -48,7 +48,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 				$claims = json_decode($claim[0]);
 					echo $claims->data->message;
 					echo "\n";
-If ($claims->data->message != ""){
+
 					sleep(5);
 					echo "[+]Process Redeem COBAINGOJEK \n";
 						$data4 = '{"promo_code":"COBAINGOJEK"}';
@@ -62,7 +62,7 @@ If ($claims->data->message != ""){
 				$claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
 				$claims2 = json_decode($claim2[0]);
 					echo $claims2->data->message;
-}
+
 					
 		}else{
 			echo "Verifikasi gagal";
